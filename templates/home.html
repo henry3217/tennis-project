@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="carouselTennis" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/melbournepark1.jpeg' %}" class="d-block w-100" alt="tennis1">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/melbournepark2.jpeg' %}" class="d-block w-100" alt="tennis2">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/melbournen.jpeg' %}" class="d-block w-100" alt="tennis3">
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <img src="{% static 'img/strategy.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Strategy</h5>
+      <p class="card-text"> A key part of tennis overlooked by many newcomers.
+        Developing a strategy by observing your opponent in matchplay is a skill
+        that cannot be overlooked. Many times during a game one will have to adjust
+        their strategy.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'img/mentalt.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Mental Toughness</h5>
+      <p class="card-text">Another very important aspect of the game is mental strength.
+        Many Pro tennis players have compared tennis to boxing, it can be a lonely sport at times.
+        Therefore learning to be mentally tough plays a great importance on ones chances
+        for victory.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'img/tennisfit.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Fitness Plan</h5>
+      <p class="card-text"> Fitness plays a very important role in a tennis players
+        game. The fitter the individual the higher the success rate of that individual grinding out
+        those long games. As a tennis player time needs to be spent in the gym in order
+        to strengthen the core muscles in the body.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Coaching </h5>
+    <p class="card-text"> Are you a beginner or intermediate player looking to take your game to the next level?
+      Do you struggle to close out matches when you're leading and in control? A lot of players at
+      club level face these challenges, at Tennis Haven our role is to help you step up
+      in these moments and help close out those tight matches that you're struggling with.
+      We use a number of different coaching techniques to help our students feel more confident
+      on the court.
+    </p>
+  </div>
+</div>
+
+
+
+{% endblock content %}

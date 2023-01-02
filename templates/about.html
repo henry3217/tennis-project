@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} About {% endblock title %}
+
+{% block content %}
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Training To Advance Your Game</h5>
+    <p class="card-text">At Tennis Haven our mission is to analyse your current
+      style of play and help you reach that next level where you're able to close out
+      matches more consitently. Our coaching staff will assess your strengths, and
+      also find those key areas which are holding you back from reaching your maximum potential.
+      When you've been playing tennis for a while sometimes it can be hard to find
+      those little tweaks in your game which can have a huge impact in your performance.
+
+      Our Coaches pick up on those little subtle things that you may overlook on a
+      daily basis. Having another pair on eyes while your playing helps our Coaches
+      assess in realtime what tweak and adjustements you need to help refine your game.
+      Once our Coach has picked up on areas they believe need improving they will
+      develop a individual plan suuited to your game.
+
+    </p>
+  </div>
+  <img src="{% static 'img/tcourt1.jpeg' %}" class="card-img-bottom" alt="...">
+</div>
+{% endblock content %}

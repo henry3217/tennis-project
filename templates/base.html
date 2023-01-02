@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>{% block title %} Tennis {% endblock title %} </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top shadow-sm bg-white"><a href="{% url 'home' %}"
+      class="navbar-brand">Tennis Haven</a>
+    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main>
+
+    {% block content %}
+    {% endblock content %}
+
+  </main>
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+  <footer style="background-color: #f3eded;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #000000;">Take your tennis to the next level! </h5>
+          <p>
+            What are you waiting for? You've been wanting to unlock your potential
+            for a while now. Reach out via the contact form and lets start making improvements
+            now.
+          </p>
+        </div>
+
+
+        <div class="col-lg-6 col-md-12 mb-4">
+          <table class="table" style="color: #000000; border-color: #666;">
+            <h5 class="text-center" style="letter-spacing: 2px; color: #000000;">links</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="text-center">
+                <a href="{% url 'home' %}" style="color: #020202;">Home</a>
+              </li>
+              <li class="text-center">
+                <a href="{% url 'contact' %}" style="color: #000000;">Contact</a>
+              </li>
+              <li class="text-center">
+                <a href="{% url 'about' %}" style="color: #000000;">About</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+  </footer>
+
+  </div>
+  <!-- End of .container -->
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
